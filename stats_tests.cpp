@@ -21,30 +21,54 @@
 #include <vector>
 using namespace std;
 
-void test_sum_small_data_set();
+void sum_test();
+void mean_test();
+void median_test();
 
 // Add prototypes for you test functions here.
 
 int main()
 {
-  test_sum_small_data_set();
-  // Call your test functions here
+	median_test();
 
   return 0;
 }
 
-void test_sum_small_data_set()
-{
-  cout << "test_sum_small_data_set" << endl;
+void sum_test() {
+	cout << "sum_test" << endl;
 
-  vector<double> data;
-  data.push_back(1);
-  data.push_back(2);
-  data.push_back(3);
+	vector<double> data;
+	data.push_back(1);
+	data.push_back(2);
+	data.push_back(3);
 
-  assert(sum(data) == 6);
+	assert(sum(data) == 6);
+	cout << "PASS!" << endl;
+}
 
-  cout << "PASS!" << endl;
+void mean_test() {
+	cout << "mean_test" << endl;
+
+	vector<double> data;
+	data.push_back(2);
+	data.push_back(3);
+	data.push_back(4);
+	data.push_back(5);
+
+	assert(mean(data) == 3.5);
+
+	cout << "PASS" << endl;
+}
+
+void median_test() {
+	vector<double> data;
+	data.push_back(1);
+	data.push_back(2);
+	data.push_back(4);//g->l
+	data.push_back(3);
+	data.push_back(3);
+
+	cout << median(data);
 }
 
 // Add the test function implementations here.
