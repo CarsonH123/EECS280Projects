@@ -1,0 +1,14 @@
+
+Files:
+main_test_data.tsv: a test data file
+main_test.in: a test input file
+main_test.out.correct: the correct output when running ./statistics < main_test.in
+Makefile: used by make to compile easier
+statistics_correct.exe: the correct executable (your output should match this one)
+
+Links:
+
+Project 1 link: https://eecs280staff.github.io/p1-stats/
+Main EECS 280 link: https://eecs280staff.github.io/eecs280.org/
+Lecture Notes link: https://eecs280staff.github.io/notes/
+Basic Linux Commands: https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners
